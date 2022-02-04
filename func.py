@@ -3,13 +3,6 @@ import numpy as np
 import copy
 import matplotlib.pyplot as plt
 import pandas as pd
-def sgn(x):
-    if x>0:
-        return 1
-    elif x<0:
-        return -1
-    else:
-        return 0
 
 def wt(index_list, wavefunc = 'db4', lv = 4, m=1,n=4, plot = True):
 
@@ -24,11 +17,10 @@ def wt(index_list, wavefunc = 'db4', lv = 4, m=1,n=4, plot = True):
         for j in range(len(coeff[i])): #denoise using soft-thresholding
             if (coeff[i][j] > Tr) :
                 coeff[i][j] -= Tr
-                #coeff[i][j] = sgn(coeff[i][j]) * (abs(coeff[i][j]) - Tr)  # Shrink to zero
             elif (coeff[i][j] < -Tr) :
                 coeff[i][j] += Tr
             else:
-                coeff[i][j] = 0  # Set to zero if smaller than threshold
+                coeff[i][j] = 0  
 
     # Reconstructing
     c = pywt.waverec(coeff, wavefunc)
