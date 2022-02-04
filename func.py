@@ -12,7 +12,7 @@ def wt(index_list, wavefunc = 'db4', lv = 4, m=1,n=4, plot = True):
 
     # Denoising
     # Soft Threshold Processing Method
-    for i in range(m,n + 1):  # Select m~n Levels of the wavelet coefficients，and no need to dispose the cA coefficients(approximation coefficients)
+    for i in range(m,n + 1): 
         Tr = np.sqrt(2 * np.log2(len(coeff[i])))  # Compute Threshold using Stein's Unbiased Risk Estimate (SURE)
         for j in range(len(coeff[i])): #denoise using soft-thresholding
             if (coeff[i][j] > Tr) :
