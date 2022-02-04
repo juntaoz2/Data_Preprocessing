@@ -4,7 +4,7 @@ import copy
 import matplotlib.pyplot as plt
 import pandas as pd
 
-def wt(index_list, wavefunc = 'db4', lv = 4, m=1,n=4, plot = True):
+def wt(index_list, wavefunc = 'db4', lv = 4, plot = True):
 
     #Denoising
     #soft Threshold Processing Method
@@ -12,7 +12,7 @@ def wt(index_list, wavefunc = 'db4', lv = 4, m=1,n=4, plot = True):
 
     # Denoising
     # Soft Threshold Processing Method
-    for i in range(m,n + 1): 
+    for i in range(1, lv + 1): #do not denoise cA
         Tr = np.sqrt(2 * np.log2(len(coeff[i])))  # Compute Threshold using Stein's Unbiased Risk Estimate (SURE)
         for j in range(len(coeff[i])): #denoise using soft-thresholding
             if (coeff[i][j] > Tr) :
