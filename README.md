@@ -15,3 +15,5 @@ Singapore ; Hackensack, NJ : World Scientific Publishing Co. Pte. Ltd. 2013
 5. ANG, Y. I. et al. The Optimal Selection of Mother Wavelet Function and Decomposition Level for Denoising of DCG Signal. Sensors (14248220), [s. l.], v. 21, n. 5, p. 1851, 2021. DOI 10.3390/s21051851. Disponível em: https://search-ebscohost-com.proxy.library.nyu.edu/login.aspx?direct=true&db=a9h&AN=149295857&site=eds-live. Acesso em: 9 fev. 2022.
 
 6. SINGH, B. N.; TIWARI, A. K. Optimal selection of wavelet basis function applied to ECG signal denoising. Digital Signal Processing, [s. l.], v. 16, n. 3, p. 275–287, 2006. DOI 10.1016/j.dsp.2005.12.003. Disponível em: https://search-ebscohost-com.proxy.library.nyu.edu/login.aspx?direct=true&db=edselp&AN=S1051200405001703&site=eds-live. Acesso em: 9 fev. 2022.
+
+7. MASSET, P. Analysis of Financial Time Series Using Wavelet Methods. [S. l.: s. n.]. ISBN 1-4614-7749-2. Disponível em: https://search-ebscohost-com.proxy.library.nyu.edu/login.aspx?direct=true&db=edsdnp&AN=edsdnp.7046344ART&site=eds-live. Acesso em: 10 fev. 2022.
